@@ -1,0 +1,15 @@
+<H1 class="font-serif">Alumnos:</H1>
+<div class="table w-full">
+    <div class="table-row-group">
+      <div class="table-row">
+        <div class="table-cell bg-gray-200 text-gray-700 px-4 py-2 text-sm">NOMBRE</div>
+        <div class="table-cell bg-gray-200 text-gray-700 px-4 py-2 text-sm">APELLIDOS</div>
+        <div class="table-cell bg-gray-200 text-gray-700 px-4 py-2 text-sm">DNI</div>
+      </div>
+      <div class="table-row" *ngFor="let alumno of alumnos">
+        <div class="table-cell bg-gray-200 text-gray-700 px-4 py-2 text-sm">{{alumno.nombre}}</div>
+        <div class="table-cell bg-gray-200 text-gray-700 px-4 py-2 text-sm">{{alumno.apellido}}</div>
+        <div class="table-cell bg-gray-200 text-gray-700 px-4 py-2 text-sm">{{alumno.dni}}</div>
+      </div>
+    </div>
+  </div>

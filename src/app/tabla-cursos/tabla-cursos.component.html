@@ -1,0 +1,15 @@
+<H1>Cursos:</H1>
+<div class="table w-full">
+    <div class="table-row-group">
+      <div class="table-row">
+        <div class="table-cell bg-gray-200 text-gray-700 px-4 py-2 text-sm">CURSO</div>
+        <div class="table-cell bg-gray-200 text-gray-700 px-4 py-2 text-sm">DIFICULTAD</div>
+        <div class="table-cell bg-gray-200 text-gray-700 px-4 py-2 text-sm">CREDITOS REQUERIDOS</div>
+      </div>
+      <div class="table-row" *ngFor="let curso of cursos">
+        <div class="table-cell bg-gray-200 text-gray-700 px-4 py-2 text-sm">{{curso.curso}}</div>
+        <div class="table-cell bg-gray-200 text-gray-700 px-4 py-2 text-sm">{{curso.dificultad}}</div>
+        <div class="table-cell bg-gray-200 text-gray-700 px-4 py-2 text-sm">{{curso.creditos}}</div>
+      </div>
+    </div>
+  </div>
